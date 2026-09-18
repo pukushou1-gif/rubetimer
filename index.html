@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10243b" />
+    <title>20秒 時報タイマー</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="timer-card">
+      <p class="eyebrow">REPEATING TIME SIGNAL</p>
+      <h1>20秒 時報タイマー</h1>
+      <p class="description">開始すると、20秒ごとに短い時報音が鳴ります。</p>
+
+      <section class="display" aria-live="polite">
+        <span class="label">次の時報まで</span>
+        <strong id="countdown">20</strong><span class="seconds">秒</span>
+      </section>
+
+      <button id="toggleButton" type="button">開始</button>
+      <button id="testButton" class="secondary" type="button">音を試す</button>
+
+      <p id="status" class="status">停止中</p>
+      <p class="count">鳴った回数：<span id="ringCount">0</span>回</p>
+      <p class="note">音を鳴らすため、最初に「開始」または「音を試す」を押してください。</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
